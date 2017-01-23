@@ -104,10 +104,10 @@ fprintf('\n');
 % ====================== YOUR CODE HERE ======================
 % Recall that the first column of X is all-ones. Thus, it does
 % not need to be normalized.
-X = [1650, 3];
-X = (X - mu) ./ sigma;
-X = [1, X];
-price = X * theta; % You should change this
+target = [1650, 3];
+target = (target - mu) ./ sigma;
+target = [1, target];
+price = target * theta; % You should change this
 
 tmp = computeCostMulti(X, y, theta)
 
